@@ -5,13 +5,19 @@
         "spatie",
         "laravel-sitemap"
     ],
-    "homepage": "https://github.com/spatie/laravel-sitemap",
+    "homepage": "https://github.com/MarilesBeard5/laravel-sitemap",
     "license": "MIT",
     "authors": [
         {
             "name": "Freek Van der Herten",
             "email": "freek@spatie.be",
             "homepage": "https://spatie.be",
+            "role": "Developer"
+        },
+        {
+            "name": "German Dario Mariles Guerrero",
+            "email": "marilesbeard5@gmail.com",
+            "homepage": "https://github.com/MarilesBeard5",
             "role": "Developer"
         }
     ],

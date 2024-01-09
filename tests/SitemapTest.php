@@ -99,6 +99,18 @@ it('can render an url with priority 0', function () {
     assertMatchesXmlSnapshot($this->sitemap->render());
 });
 
+it('can render an url with priority null', function () {
+    $this->sitemap
+        ->add(
+            Url::create('/home')
+                ->setLastModificationDate($this->now->subDay())
+                ->setChangeFrequency(Url::CHANGE_FREQUENCY_YEARLY)
+                ->setPriority(null)
+        );
+
+    assertMatchesXmlSnapshot($this->sitemap->render());
+});
+
 it('can determine if it contains a given url', function () {
     $this->sitemap
         ->add('/page1')
