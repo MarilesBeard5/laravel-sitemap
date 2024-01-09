@@ -21,7 +21,7 @@ class Url extends Tag
 
     public string $changeFrequency;
 
-    public float $priority = 0.8;
+    public mixed $priority = 0.8;
 
     /** @var \Spatie\Sitemap\Tags\Alternate[] */
     public array $alternates = [];
@@ -68,9 +68,13 @@ class Url extends Tag
         return $this;
     }
 
-    public function setPriority(float $priority): static
+    public function setPriority(?float $priority): static
     {
-        $this->priority = max(0, min($priority, 1));
+        if ($priority !== null) {
+            $priority = max(0, min($priority, 1));
+        }
+
+        $this->priority = $priority;
 
         return $this;
     }
