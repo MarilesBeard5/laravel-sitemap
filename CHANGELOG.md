@@ -2,6 +2,33 @@
 
 All notable changes to `laravel-sitemap` will be documented in this file
 
+## 7.1.1 - 2024-01-26
+
+### What's Changed
+
+* Symfony Dom Crawler Version Upgrade to 7.0 by @karakhanyans in https://github.com/spatie/laravel-sitemap/pull/537
+
+### New Contributors
+
+* @karakhanyans made their first contribution in https://github.com/spatie/laravel-sitemap/pull/537
+
+**Full Changelog**: https://github.com/spatie/laravel-sitemap/compare/7.1.0...7.1.1
+
+## 7.1.0 - 2024-01-24
+
+### What's Changed
+
+* Update README.md by @DannyCooper in https://github.com/spatie/laravel-sitemap/pull/528
+* Bump actions/cache from 3 to 4 by @dependabot in https://github.com/spatie/laravel-sitemap/pull/535
+* Add public for ->writeToDisk() as option by @bmckay959 in https://github.com/spatie/laravel-sitemap/pull/534
+
+### New Contributors
+
+* @DannyCooper made their first contribution in https://github.com/spatie/laravel-sitemap/pull/528
+* @bmckay959 made their first contribution in https://github.com/spatie/laravel-sitemap/pull/534
+
+**Full Changelog**: https://github.com/spatie/laravel-sitemap/compare/7.0.0...7.1.0
+
 ## 7.0.0 - 2023-10-24
 
 - add compatibility with spatie/crawler v8
