@@ -9,7 +9,11 @@
     <video:player_loc>{{ $video->playerLoc }}</video:player_loc>
 @endif
 @foreach($video->options as $tag => $value)
+    @if ($tag == 'uploader')
+        <video:uploader info="{{ explode(';', $value)[1] }}">{{ explode(';', $value)[0] }}</video:uploader>
+    @else
     <video:{{$tag}}>{{$value}}</video:{{$tag}}>
+    @endif
 @endforeach
 @foreach($video->allow as $tag => $value)
     <video:{{$tag}} relationship="allow">{{$value}}</video:{{$tag}}>
