@@ -18,6 +18,7 @@ test('XML has Video tag', function () {
                                     <video:content_loc>https://example.com/video.mp4</video:content_loc>
                                     <video:live>no</video:live>
                                     <video:family_friendly>yes</video:family_friendly>
+                                    <video:uploader info="https://example.com">Example</video:uploader>
                                     <video:platform relationship="allow">mobile</video:platform>
                                     <video:restriction relationship="deny">CA</video:restriction>
                                     <video:tag>tag1</video:tag>
@@ -26,7 +27,11 @@ test('XML has Video tag', function () {
                             </url>
                         </urlset>';
 
-    $options = ["live" => "no", "family_friendly" => "yes"];
+    $options = [
+        "live" => "no",
+        "family_friendly" => "yes",
+        "uploader" => "Example;https://example.com",
+    ];
     $allow = ["platform" => Video::OPTION_PLATFORM_MOBILE];
     $deny = ["restriction" => 'CA'];
     $tags = ['tag1', 'tag2'];
